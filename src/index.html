@@ -10,21 +10,45 @@
     <nav class="flex flex-row flex justify-between">
         <!-- left side nav buttons -->
         <div class="flex flex-row justify-center py-1.5 text-md ml-12 bg-opacity-30 backdrop-filter backdrop-blur-lg mt-8 rounded-lg bg-stone-200 w-44 "> 
-            <p class="text-white font-bold">Music Chapters</p>
+            <a href="index.html" class="text-white font-bold">Music Chapters</a>
         </div>
 
         <!-- right side nav buttons -->
         <div class="flex flex-row">
-            <div class="flex flex-row justify-center py-1.5 text-md ml-12 bg-opacity-30 backdrop-filter backdrop-blur-lg mt-8 rounded-lg bg-stone-200 w-44 "> 
+            <button class="flex flex-row justify-center py-1.5 text-md ml-12 bg-opacity-30 backdrop-filter backdrop-blur-lg mt-8 rounded-lg bg-stone-200 w-44 "> 
                 <p class="text-white font-bold">Playlist</p>
-            </div>
-            <div class="flex flex-row justify-center py-1.5 text-md mx-12 bg-opacity-30 backdrop-filter backdrop-blur-lg mt-8 rounded-lg bg-stone-200 w-44 "> 
+            </button>
+            <button class="flex flex-row justify-center py-1.5 text-md mx-12 bg-opacity-30 backdrop-filter backdrop-blur-lg mt-8 rounded-lg bg-stone-200 w-44 "> 
                 <p class="text-white font-bold">Chapters</p>
-            </div>
-            <div class="flex flex-row justify-center py-1.5 text-md mr-12 bg-opacity-30 backdrop-filter backdrop-blur-lg mt-8 rounded-lg bg-stone-200 w-44 "> 
+            </button>
+            <button class="flex flex-row justify-center py-1.5 text-md mr-12 bg-opacity-30 backdrop-filter backdrop-blur-lg mt-8 rounded-lg bg-stone-200 w-44 "> 
                 <p class="text-white font-bold">Uploads</p>
-            </div>
+            </button>
         </div>
     </nav>
+    <main class="">
+        <!-- media control buttons -->
+        <div class="flex flex-row ml-10">
+            <button class="flex flex-row justify-center items-center mx-2 h-12 text-md  bg-opacity-30 backdrop-filter backdrop-blur-lg mt-8 rounded-lg bg-stone-200 w-16 "> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M8 11.3333L18.2227 4.51823C18.4524 4.36506 18.7628 4.42714 18.916 4.65691C18.9708 4.73904 19 4.83555 19 4.93426V19.0657C19 19.3419 18.7761 19.5657 18.5 19.5657C18.4013 19.5657 18.3048 19.5365 18.2227 19.4818L8 12.6667V19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19V5C6 4.44772 6.44772 4 7 4C7.55228 4 8 4.44772 8 5V11.3333Z"></path></svg>
+            </button>
+            <button class="flex flex-row justify-center items-center h-12  text-md  bg-opacity-30 backdrop-filter backdrop-blur-lg mt-8 rounded-lg bg-stone-200 w-16 "> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M19.376 12.4158L8.77735 19.4816C8.54759 19.6348 8.23715 19.5727 8.08397 19.3429C8.02922 19.2608 8 19.1643 8 19.0656V4.93408C8 4.65794 8.22386 4.43408 8.5 4.43408C8.59871 4.43408 8.69522 4.4633 8.77735 4.51806L19.376 11.5838C19.6057 11.737 19.6678 12.0474 19.5146 12.2772C19.478 12.3321 19.4309 12.3792 19.376 12.4158Z"></path></svg>
+            </button>
+            <button class="flex flex-row justify-center items-center mx-2 h-12 text-md  bg-opacity-30 backdrop-filter backdrop-blur-lg mt-8 rounded-lg bg-stone-200 w-16 "> 
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M16 12.6667L5.77735 19.4818C5.54759 19.6349 5.23715 19.5729 5.08397 19.3431C5.02922 19.261 5 19.1645 5 19.0657V4.93426C5 4.65812 5.22386 4.43426 5.5 4.43426C5.59871 4.43426 5.69522 4.46348 5.77735 4.51823L16 11.3333V5C16 4.44772 16.4477 4 17 4C17.5523 4 18 4.44772 18 5V19C18 19.5523 17.5523 20 17 20C16.4477 20 16 19.5523 16 19V12.6667Z"></path></svg>
+            </button>
+        </div>
+
+        <!-- music player -->
+        <!-- progress bar -->
+        <div class=" w-1/2 h-12 text-md mx-12 bg-opacity-30 backdrop-filter backdrop-blur-lg mt-8 rounded-lg bg-stone-200">
+            <div class="absolute w-32 h-12 text-md rounded-lg bg-red-500"></div>
+            <!-- time start -->
+            <p class="absolute left=8 text-white">13:35</p>
+            <!-- time end -->
+            <p class="absolute text-white">2:59:03</p>
+        </div>
+    </main>
 </body>
 </html>
