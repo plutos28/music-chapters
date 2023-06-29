@@ -530,6 +530,10 @@ video {
   bottom: 1rem;
 }
 
+.m-24 {
+  margin: 6rem;
+}
+
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -574,6 +578,30 @@ video {
 
 .mr-4 {
   margin-right: 1rem;
+}
+
+.mr-20 {
+  margin-right: 5rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
+}
+
+.ml-24 {
+  margin-left: 6rem;
+}
+
+.ml-28 {
+  margin-left: 7rem;
+}
+
+.ml-32 {
+  margin-left: 8rem;
+}
+
+.ml-36 {
+  margin-left: 9rem;
 }
 
 .flex {
