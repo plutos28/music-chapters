@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-[url('/images/bg.jpg')] bg-cover font-lato">
+<body class="bg-[url('/images/bg.jpg')] bg-cover font-lato flex flex-col justify-between h-screen">
     <nav class="flex flex-row flex justify-between">
         <!-- left side nav buttons -->
         <div class="flex flex-row justify-center py-1.5 text-md ml-12 bg-opacity-30 backdrop-filter backdrop-blur-md mt-8 rounded-lg bg-stone-200 w-44 "> 
@@ -29,22 +29,24 @@
             </button>
         </div>
     </nav>
-    <main class="">
+    <div class="flex flex-row mb-8">
         <!-- media control buttons -->
         <div class="flex flex-row ml-10">
-            <button class="flex flex-row justify-center items-center mx-2 h-12 text-sm  bg-opacity-30 backdrop-filter backdrop-blur-md mt-8 rounded-lg bg-stone-200 w-16 "> 
+            <button class="flex flex-row justify-center items-center mx-2 h-12 text-sm  bg-opacity-30 backdrop-filter backdrop-blur-md mt-8 rounded-lg bg-stone-200 w-12 "> 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M8 11.3333L18.2227 4.51823C18.4524 4.36506 18.7628 4.42714 18.916 4.65691C18.9708 4.73904 19 4.83555 19 4.93426V19.0657C19 19.3419 18.7761 19.5657 18.5 19.5657C18.4013 19.5657 18.3048 19.5365 18.2227 19.4818L8 12.6667V19C8 19.5523 7.55228 20 7 20C6.44772 20 6 19.5523 6 19V5C6 4.44772 6.44772 4 7 4C7.55228 4 8 4.44772 8 5V11.3333Z"></path></svg>
             </button>
-            <button class="flex flex-row justify-center items-center h-12  text-sm  bg-opacity-30 backdrop-filter backdrop-blur-md mt-8 rounded-lg bg-stone-200 w-16 "> 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M19.376 12.4158L8.77735 19.4816C8.54759 19.6348 8.23715 19.5727 8.08397 19.3429C8.02922 19.2608 8 19.1643 8 19.0656V4.93408C8 4.65794 8.22386 4.43408 8.5 4.43408C8.59871 4.43408 8.69522 4.4633 8.77735 4.51806L19.376 11.5838C19.6057 11.737 19.6678 12.0474 19.5146 12.2772C19.478 12.3321 19.4309 12.3792 19.376 12.4158Z"></path></svg>
+            <button class="flex flex-row justify-center items-center h-12  text-sm  bg-opacity-30 backdrop-filter backdrop-blur-md mt-8 rounded-lg bg-stone-200 w-12 "> 
+                <!-- somehow, including this white font awesome svg made all the other svgs also white, leave it for now -->
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M19.376 12.4158L8.77735 19.4816C8.54759 19.6348 8.23715 19.5727 8.08397 19.3429C8.02922 19.2608 8 19.1643 8 19.0656V4.93408C8 4.65794 8.22386 4.43408 8.5 4.43408C8.59871 4.43408 8.69522 4.4633 8.77735 4.51806L19.376 11.5838C19.6057 11.737 19.6678 12.0474 19.5146 12.2772C19.478 12.3321 19.4309 12.3792 19.376 12.4158Z"></path></svg> -->
+                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
             </button>
-            <button class="flex flex-row justify-center items-center mx-2 h-12 text-sm  bg-opacity-30 backdrop-filter backdrop-blur-md mt-8 rounded-lg bg-stone-200 w-16 "> 
+            <button class="flex flex-row justify-center items-center mx-2 h-12 text-sm  bg-opacity-30 backdrop-filter backdrop-blur-md mt-8 rounded-lg bg-stone-200 w-12 "> 
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M16 12.6667L5.77735 19.4818C5.54759 19.6349 5.23715 19.5729 5.08397 19.3431C5.02922 19.261 5 19.1645 5 19.0657V4.93426C5 4.65812 5.22386 4.43426 5.5 4.43426C5.59871 4.43426 5.69522 4.46348 5.77735 4.51823L16 11.3333V5C16 4.44772 16.4477 4 17 4C17.5523 4 18 4.44772 18 5V19C18 19.5523 17.5523 20 17 20C16.4477 20 16 19.5523 16 19V12.6667Z"></path></svg>
             </button>
         </div>
 
         <!-- music player -->
-        <div class="flex flex-row justify-between items-center w-1/2 h-12 text-md mx-12 bg-opacity-30 backdrop-filter backdrop-blur-md mt-8 rounded-lg bg-stone-200">
+        <div class="flex flex-row justify-between items-center w-1/2 h-12 text-md ml-8 bg-opacity-30 backdrop-filter backdrop-blur-md mt-8 rounded-lg bg-stone-200">
             <!-- I think the progress bar should be something like an svg or something we can fill in, that would be better than a seperate element -->
             <!-- <div class="w-32 h-12 text-md rounded-lg bg-red-500"></div> --> 
             <!-- time start -->
@@ -54,6 +56,13 @@
             <!-- time end -->
             <p class="text-white pr-4 text-sm">2:59:03</p>
         </div>
-    </main>
+
+        <!-- volume controller -->
+        <div class="flex flex-row justify-between items-center w-48 h-12 text-md ml-8 bg-opacity-30 backdrop-filter backdrop-blur-md mt-8 rounded-lg bg-stone-200">
+            <!-- using this svg to change the color of below icon to black -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M2 16.0001H5.88889L11.1834 20.3319C11.2727 20.405 11.3846 20.4449 11.5 20.4449C11.7761 20.4449 12 20.2211 12 19.9449V4.05519C12 3.93977 11.9601 3.8279 11.887 3.73857C11.7121 3.52485 11.3971 3.49335 11.1834 3.66821L5.88889 8.00007H2C1.44772 8.00007 1 8.44778 1 9.00007V15.0001C1 15.5524 1.44772 16.0001 2 16.0001ZM23 12C23 15.292 21.5539 18.2463 19.2622 20.2622L17.8445 18.8444C19.7758 17.1937 21 14.7398 21 12C21 9.26016 19.7758 6.80629 17.8445 5.15557L19.2622 3.73779C21.5539 5.75368 23 8.70795 23 12ZM18 12C18 10.0883 17.106 8.38548 15.7133 7.28673L14.2842 8.71584C15.3213 9.43855 16 10.64 16 12C16 13.36 15.3213 14.5614 14.2842 15.2841L15.7133 16.7132C17.106 15.6145 18 13.9116 18 12Z"></path></svg>
+            <p class="text-white text-sm mr-4">30%</p>
+        </div>
+    </div>
 </body>
 </html>
